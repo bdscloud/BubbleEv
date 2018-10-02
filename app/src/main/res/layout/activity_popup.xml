@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/edittextnoncurved"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/relativeLayout1"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom de l'Evenement"
+                android:textStyle="bold"
+                android:textColor="#272f8a"
+                android:textSize="28dp"
+                android:typeface="normal"
+                android:paddingTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/SETnom"
+                />
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/no_image"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/SETnom"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/SETphoto"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SETphoto"
+                android:text="Date de debut :  "
+                android:id="@+id/datedebut"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:layout_toRightOf="@+id/datedebut"
+                android:layout_below="@+id/SETphoto"
+                android:id="@+id/SETdateDebut"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datedebut"
+                android:text="Date de fin :  "
+                android:id="@+id/datedefin"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:layout_toRightOf="@+id/datedefin"
+                android:layout_below="@+id/datedebut"
+                android:id="@+id/SETdateFin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/datedefin"
+                android:text="Adresse :  "
+                android:id="@+id/adresse"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/adresse"
+                android:layout_below="@+id/datedefin"
+                android:text="adresse"
+                android:id="@+id/SETadresse"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adresse"
+                android:text="Distance : "
+                android:id="@+id/distance"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/distance"
+                android:layout_below="@+id/adresse"
+                android:text="number"
+                android:id="@+id/SETkm"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="km"
+                android:layout_toRightOf="@+id/SETkm"
+                android:layout_below="@+id/adresse"
+                android:layout_marginLeft="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="description #mots clefs"
+                android:layout_below="@+id/distance"
+                android:layout_marginTop="5dp"
+                android:id="@+id/SETdescription"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aucun fichier audio ni video"
+                android:layout_below="@+id/SETdescription"
+                android:id="@+id/video"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/video"
+                android:text=" by pseudo"
+                android:id="@+id/SETpseudo"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

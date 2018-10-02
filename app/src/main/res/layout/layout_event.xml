@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:id="@+id/rel"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/relativeLayout"
+        >
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Rel_lay"
+            android:background="#caddee">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="16dp"
+                android:id="@+id/linearKM">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="10dp"
+                    android:id="@+id/distanceEvenement"
+                    android:textColor="@color/colorbleufoncé"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/linearKM">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/no_image"
+                    android:id="@+id/photoEV"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/Rel_lay"
+            android:background="#caddee">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="90"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/relativeLayout1"
+                    android:layout_weight="63">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nom de l'Evenement"
+                        android:id="@+id/nomEV"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#476dcf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="27"
+                    android:weightSum="60"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="12"
+                        android:weightSum="60"
+                        android:orientation="vertical"
+                        android:id="@+id/linearlayout"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="33"
+                            android:id="@+id/relativeLayout2">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="mots clefs"
+                                    android:id="@+id/motsClefsEV"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="#fd000000" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="27"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="50">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_weight="27"
+                                    android:weightSum="2">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="DateStart"
+                                                android:id="@+id/dateEVStart"
+                                                android:layout_marginLeft="5dp"
+                                                android:textColor="#fd000000"
+                                                android:textSize="10dp"
+                                                android:layout_alignParentBottom="true"/>
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentStart="true"
+                                                android:layout_alignParentLeft="true"
+                                                android:text="DateEnd"
+                                                android:textColor="#fd000000"
+                                                android:layout_marginLeft="5dp"
+                                                android:id="@+id/dateEVEnd"
+                                                android:textSize="10dp"
+                                                />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="23">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Pseudo Posteur"
+                                            android:id="@+id/posteurEV"
+                                            android:textColor="#fd000000"
+                                            android:layout_centerVertical="true"
+                                            android:layout_alignParentLeft="true" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="48"
+                        android:weightSum="20"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="41dp">
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/buttonStar"
+                                    android:layout_centerInParent="true"
+                                    android:button="@android:drawable/btn_star"
+                                    android:focusableInTouchMode="false"
+                                    android:focusable="false" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="15">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="note"
+                                    android:id="@+id/noteEV"
+                                    android:textColor="#fd000000"
+                                    android:textSize="10dp"
+                                    android:layout_alignParentTop="true"
+                                    android:gravity="center_horizontal"
+                                    android:inputType="number" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

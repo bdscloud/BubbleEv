@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.briceveyredesoras.bubble_ev">
+
+    <!-- New permissions for camera app -->
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- End new permissions for camera app -->
+
+
+    <!-- New permissions for GPS -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- End new permissions for GPS -->
+
+    <!--permission google maps -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <!-- fin des permissions maps -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ListOfEventsActivity"
+            android:label="ListOfEvents"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:noHistory="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PostEventActivity"
+            android:label="Post"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ParametersActivity"
+            android:label="Parametres"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ChangeMailActivity"
+            android:label="ChangeMail"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="ChangeParameters"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ChangePremiumActivity"
+            android:theme="@style/AppTheme"
+            android:label="ChangePremium"/>
+        <activity
+            android:name=".PostEventActivity2"
+            android:label="Post"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PostEventActivity3"
+            android:label="Post"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PopUpEvent"
+            android:label="PopUp"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ChangePremiumActivity">
+
+    <TextView
+        android:text="Compte premium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Le compte premium confère certains avantages :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Vous pourrez poster vos évènements à 15 jours à l'avance."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Vous ne verrez plus de publicité sur notre application."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:text="Entrez votre mot de passe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etPassword3"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/bChangePremium"
+        android:onClick="onClickPassPremium"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:text="Passer PREMIUM"
+        android:textColor="@color/colorbleufoncé"
+        android:padding="5dp"
+        android:background="@drawable/post_bouton"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
